@@ -64,10 +64,10 @@ public class DroppedItem : MonoBehaviour
     {
         if (InventorySystem.Instance != null)
         {
-            // Add item to inventory
+           
             InventorySystem.Instance.AddItem(itemData);
             UIManger.Instance.ShowMessage("Picked up " + itemData.name);
-            // Optional: Play pickup sound/effect here
+          
 
             Destroy(gameObject);
         }

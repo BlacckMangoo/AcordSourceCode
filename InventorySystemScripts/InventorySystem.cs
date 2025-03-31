@@ -47,7 +47,7 @@ public class InventorySystem : MonoBehaviour
             }
         }
 
-        // Add to the first available empty slot
+       
         for (int i = 0; i < slots.Length; i++)
         {
             if (slots[i].item == null)
@@ -58,8 +58,6 @@ public class InventorySystem : MonoBehaviour
                 return true;
             }
         }
-
-        // No available slot
         return false;
     }
 

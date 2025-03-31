@@ -17,7 +17,7 @@ public class DialogueSystem : MonoBehaviour
         DialogueUiHolder.SetActive(true);
         currentDialogueNode = dialogueNode;
 
-        // Reset the dialogue index to 0.
+        
         dialogueToDisplay = 0;
 
         // Check to ensure there's at least one dialogue line.

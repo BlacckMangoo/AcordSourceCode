@@ -72,7 +72,7 @@ public class PlayerMovement : MonoBehaviour
 	#endregion
 
 	#region CHECK PARAMETERS
-	//Set all of these up in the inspector
+	
 	[Header("Checks")]
 	[SerializeField] private Transform _groundCheckPoint;
 	//Size of groundCheck depends on the size of your character generally you want them slightly small than width (for ground) and height (for the wall check)

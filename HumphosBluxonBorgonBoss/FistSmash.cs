@@ -8,18 +8,18 @@ using Unity.Mathematics;
 
 public class FistSmash : Action
 {
-    // Reference to the Fist object
+    
     public SharedGameObject selectedFist;
     public CinemachineImpulseSource CinemachineImpulseSource;
     public ParticleSystem impactfx;
     public  AudioClip impactsfx;
     public GameObject shockWave;
     public Vector2 offsetShockwave;
-    // Variables for punch duration and punch strength
+ 
     public SharedFloat punchDuration = 0.5f;
     public SharedFloat maxPunchDistance = 5f;
    public  Transform fistComeBackPos;
-    // Layer to check for the ground
+
     public LayerMask groundLayer;
     Vector2 hitpoint;
 

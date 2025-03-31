@@ -8,21 +8,7 @@ public class Fist : MonoBehaviour
     [SerializeField] GameObject projectile;
     [SerializeField] Transform spaawnpos; 
 
-   
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+  
 
     public void Shoot()
     {

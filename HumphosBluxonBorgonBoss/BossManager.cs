@@ -27,7 +27,6 @@ public class BossManager : MonoBehaviour
 
 
 
-    // Start is called before the first frame update
     void Start()
     {
         healthBar.maxValue = maxHealth;

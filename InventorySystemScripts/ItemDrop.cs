@@ -9,11 +9,10 @@ public class ItemDrop : MonoBehaviour
 
     private void Start()
     {
-        // Find the Health script on the same GameObject
+      
         Health healthScript = GetComponent<Health>();
         if (healthScript != null)
         {
-            // Subscribe to the OnDeath event
             healthScript.OnDeath += SpawnItem;
         }
     }

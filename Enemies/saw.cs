@@ -25,10 +25,9 @@ public class saw : MonoBehaviour
     {
         Vector3 targetPos = movingToEnd ? endPosMarker.position : startPosMarker.position;
 
-        // Move towards the target position
+    
         transform.position = Vector3.MoveTowards(transform.position, targetPos, moveSpeed * Time.deltaTime);
 
-        // Check if reached the target position
         if (Vector3.Distance(transform.position, targetPos) < 0.1f)
             movingToEnd = !movingToEnd;
     }

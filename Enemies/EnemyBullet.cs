@@ -13,7 +13,7 @@ public class EnemyBullet : MonoBehaviour
     Vector2 startpos;
     [SerializeField] ParticleSystem hitfx;
     PlayerHealth player; 
-    // Start is called before the first frame update
+
     void Start()
     {
 
@@ -24,7 +24,6 @@ public class EnemyBullet : MonoBehaviour
  
     }
 
-    // Update is called once per frame
 
     private void FixedUpdate()
     {

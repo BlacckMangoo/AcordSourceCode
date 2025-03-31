@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class enemyConfiner : MonoBehaviour
+public class EnemyConfiner : MonoBehaviour
 {
     [SerializeField] GameObject areaConfiner;
     public GameObject AreaChecker;
@@ -19,6 +19,5 @@ public class enemyConfiner : MonoBehaviour
     {
         
     }
-
 
 }

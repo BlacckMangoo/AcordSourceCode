@@ -7,11 +7,7 @@ using DG.Tweening;
 public class FistBlowFire : Action
 {
     public SharedGameObject selectedFist; 
-    public override void OnStart()
-    {
-       
-       
-    }
+
     public override TaskStatus OnUpdate()
     {
         if (selectedFist != null)
@@ -21,10 +17,5 @@ public class FistBlowFire : Action
         return base.OnUpdate();
     }
 
-    void FollowPlayer(GameObject target)
-    {
-        {
 
-        }
-    }
 }

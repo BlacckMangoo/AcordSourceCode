@@ -17,7 +17,7 @@ public class ShieldedEnemy : MonoBehaviour
     private Vector2 wallCheckPosition;
     private Vector2 ledgeCheckPosition;
 
-    // Size of the boxes for Gizmos
+  
     [SerializeField] private Vector2 wallCheckBoxSize = new Vector2(0.2f, 0.2f); // Size of the wall check box
     [SerializeField] private Vector2 ledgeCheckBoxSize = new Vector2(0.2f, 0.2f); // Size of the ledge check box
 
@@ -65,7 +65,7 @@ public class ShieldedEnemy : MonoBehaviour
         );
         ledgeCheckPosition = new Vector2(
             moveDirection > 0 ? bounds.max.x : bounds.min.x,
-            bounds.min.y - ledgeCheckDistance * 0.5f // Center the box along the downward check
+            bounds.min.y - ledgeCheckDistance * 0.5f 
         );
     }
 
@@ -91,14 +91,14 @@ public class ShieldedEnemy : MonoBehaviour
 
     void OnDrawGizmosSelected()
     {
-        // Ensure positions are updated even in Edit mode
+     
         UpdateCheckPositions();
 
-        // Draw a box for the wall check
+  
         Gizmos.color = Color.red;
         Gizmos.DrawWireCube(wallCheckPosition, wallCheckBoxSize);
 
-        // Draw a box for the ledge check
+       
         Gizmos.color = Color.blue;
         Gizmos.DrawWireCube(ledgeCheckPosition, ledgeCheckBoxSize);
     }

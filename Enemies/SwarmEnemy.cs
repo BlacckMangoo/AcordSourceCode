@@ -8,7 +8,7 @@ public class SwarmEnemy : MonoBehaviour
     [SerializeField] float shootingRate; // shoots every shooting rate seconds
     [SerializeField] GameObject bullet;
 
-    // Change from Transform to Vector2/Vector3
+  
     private Vector3 startpos;
     float radiusToCover = 30;
     float timer;
@@ -35,7 +35,6 @@ public class SwarmEnemy : MonoBehaviour
     {
         if( Vector2.Distance(startpos, transform.position) > radiusToCover)
         {
-            // Move back to the starting position
             transform.position = Vector2.MoveTowards(transform.position, startpos, speed * Time.deltaTime);
         }
       
@@ -50,7 +49,7 @@ public class SwarmEnemy : MonoBehaviour
 
     private void Shoot()
     {
-        // Debug.Log is better for Unity than Console.WriteLine
+    
         Debug.Log("Shoot");
         Instantiate(bullet, transform.position, Quaternion.identity);
     }

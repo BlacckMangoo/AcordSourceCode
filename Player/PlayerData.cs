@@ -91,11 +91,9 @@ public class PlayerData : ScriptableObject
     {
 		
 
-		//Calculate are run acceleration & deceleration forces using formula: amount = ((1 / Time.fixedDeltaTime) * acceleration) / runMaxSpeed
 		runAccelAmount = (50 * runAcceleration) / runMaxSpeed;
 		runDeccelAmount = (50 * runDecceleration) / runMaxSpeed;
 
-		//Calculate jumpForce using the formula (initialJumpVelocity = gravity * timeToJumpApex)
 	
 
 		#region Variable Ranges
