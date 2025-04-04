@@ -13,4 +13,6 @@ Features
 3. Dialogue System
 4. Boss Fights  using behaviour trees
 5. hand drawn Art in a sketched art style
-6. Shooting combat 
+6. Shooting combat
+7. Enemies and Platforming Challenges
+8. Shop System 
