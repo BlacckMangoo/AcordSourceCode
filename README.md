@@ -15,4 +15,6 @@ Features
 5. hand drawn Art in a sketched art style
 6. Shooting combat
 7. Enemies and Platforming Challenges
-8. Shop System 
+8. Shop System
+9. Weapon Switching with 3 Bullet types , strategise to kill enemies easily ( Normal , Cannon and Richochet) 
+   
